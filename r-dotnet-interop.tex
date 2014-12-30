@@ -1,0 +1,142 @@
+\documentclass[codesnippet]{jss}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% declarations for jss.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% almost as usual
+\author{Jean-Michel Perraud\\CSIRO \And 
+        Second Author\\Plus Affiliation}
+% \title{A catchier title than the one below?}
+\title{R and .NET interoperability with rClr and R.NET}
+
+%% for pretty printing and a nice hypersummary also set:
+\Plainauthor{Jean-Michel Perraud, Second Author} %% comma-separated
+\Plaintitle{R and .NET interoperability with rClr and R.NET} %% without formatting
+\Shorttitle{R and .NET interoperability with rClr and R.NET} %% a short title (if necessary)
+
+%% an abstract and keywords
+\Abstract{
+The \pkg{rClr} package is a low-level interoperability bridge between R and a Common Language Runtime (CLR), the Microsoft .NET CLR or the Mono implementation. **rClr** is to a CLR the equivalent of what \pkg{rJava} \citep{urbanek:2013} is to a Java runtime. \pkg{rClr} uses the .NET library R.NET.
+}
+\Keywords{\proglang{R}, \proglang{C#}, .NET, Mono }
+\Plainkeywords{R, C#, .NET, Mono } %% without formatting
+%% at least one keyword must be supplied
+
+%% publication information
+%% NOTE: Typically, this can be left commented and will be filled out by the technical editor
+%% \Volume{50}
+%% \Issue{9}
+%% \Month{June}
+%% \Year{2012}
+%% \Submitdate{2012-06-04}
+%% \Acceptdate{2012-06-04}
+
+%% The address of (at least) one author should be given
+%% in the following format:
+\Address{
+  Jean-Michel Perraud\\
+  Environmental Informatics\\
+  Land and Water Flagship\\
+  CSIRO\\
+  2601 Canberra, Australia\\
+  E-mail: \email{jean-michel.perraud@csiro.au}\\
+  URL: \url{http://www.csiro.au/Organisation-Structure/Flagships/Land-and-Water.aspx}
+}
+%% It is also possible to add a telephone and fax number
+%% before the e-mail in the following format:
+%% Telephone: +43/512/507-7103
+%% Fax: +43/512/507-2851
+
+%% for those who use Sweave please include the following line (with % symbols):
+%% need no \usepackage{Sweave.sty}
+
+
+\DeclareGraphicsExtensions{.png,.pdf,.jpg}
+\usepackage[format=plain,font=small]{caption}
+\usepackage{booktabs}
+\usepackage{fancyvrb}
+\renewcommand{\FancyVerbFormatLine}[1]{R> #1}
+\usepackage{epigraph}
+\usepackage[subrefformat=parens]{subfig}
+
+%% end of declarations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Key messages
+Arbitrary .NET code can be executed without modification
+Supports more than Windows
+Performance considerations
+
+Background: 
+used to play with IronPython, C# and R via file transfer. 
+rJava and where rClr is similar, but with significant departures in the API.
+
+\section{Usage}
+
+\subsection{rClr}
+
+\subsection{R.NET}
+
+\section{Use cases}
+rsqlserver
+time stepping simulations systems built on .NET. 
+calibrate swift
+
+\section{Limitations}
+
+\section{Internals and architecture}
+Mono and .NET: different embedding/hosting APIs
+R.NET to the rescue
+Memory management and GCs
+
+\section{Future directions}
+Less code, more C#, less C/C++
+.NET core
+Reference classes, perhaps.
+
+\section{Conclusions}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
